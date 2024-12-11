@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TheDogApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\213Project\\TheDogApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\213Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\213Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\213Project\\TheDogApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TheDogApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TheDogApp.props",
+      "PackagePath": "build\\TheDogApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TheDogApp.props",
+      "PackagePath": "buildMultiTargeting\\TheDogApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TheDogApp.props",
+      "PackagePath": "buildTransitive\\TheDogApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
