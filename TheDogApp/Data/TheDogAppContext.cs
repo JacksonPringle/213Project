@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TheDogApp;
+using TheDogApp.Components;
 
 namespace TheDogApp.Data
 {
@@ -15,5 +16,6 @@ namespace TheDogApp.Data
         }
 
         public DbSet<TheDogApp.Dog> Dog { get; set; } = default!;
+        public DbSet<TheDogApp.Components.User> User { get; set; } = default!;
     }
 }
