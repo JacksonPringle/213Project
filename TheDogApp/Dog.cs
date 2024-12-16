@@ -17,11 +17,13 @@ namespace TheDogApp
         public DateTime DateAdded { get; set; }
         public string? Sex { get; set; }
 
+        public string? ImagePath { get; set; }
+
         public Dog() { }
 
 
         public Dog(int id, string name, string breed, DateTime birth, string descr, decimal cost,
-        int shelter, DateTime added, string sex, int imageID)
+        int shelter, DateTime added, string sex, int imageID, string? imagePath)
         {
             ID = id;
             Name = name;
@@ -33,6 +35,7 @@ namespace TheDogApp
             DateAdded = added;
             Sex = sex;
             ImageID = imageID;
+            ImagePath = imagePath;
         }
 
         public override string ToString()

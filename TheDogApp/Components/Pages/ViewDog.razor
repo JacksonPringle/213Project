@@ -9,6 +9,10 @@
 @if (dog != null)
 {
     <div style="background-color: #EEEEEE;margin: 15px;line-height: 1.5">
+        @if (!string.IsNullOrEmpty(dog.ImagePath))
+        {
+            <img src="@dog.ImagePath" alt="Dog Image" width="200" />
+        }
         <p>Name: @dog.Name</p>
         <p>Breed: @dog.Breed</p>
         <p>Birthdate: @dog.Birthdate.ToShortDateString()</p>

@@ -21,6 +21,26 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\images\\Australian Shepherd 1.jpg",
+      "PackagePath": "staticwebassets\\images\\Australian Shepherd 1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\images\\Australian Shepherd 2.jpg",
+      "PackagePath": "staticwebassets\\images\\Australian Shepherd 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\images\\German Shepherd 1.jpg",
+      "PackagePath": "staticwebassets\\images\\German Shepherd 1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\images\\German Shepherd 2.jpg",
+      "PackagePath": "staticwebassets\\images\\German Shepherd 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\images\\Golden Retriever 1.jpg",
+      "PackagePath": "staticwebassets\\images\\Golden Retriever 1.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TheDogApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
