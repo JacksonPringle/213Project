@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rx5f+vVqtC1pbN61BpY+NYIUPtosZZmEWRnvT0+iujE=",
+  "Hash": "sa2Sh23xzXEi70nBk2nqNLrEUFFDqDc++LxYjpGuxkI=",
   "Source": "TheDogApp",
   "BasePath": "_content/TheDogApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TheDogApp\\wwwroot",
       "Source": "TheDogApp",
-      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css",
+      "Identity": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css",
       "SourceId": "TheDogApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "TheDogApp.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
+      "Identity": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
       "SourceId": "TheDogApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "TheDogApp.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\app.css",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\favicon.png",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r\\New folder (2)\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\213 Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
