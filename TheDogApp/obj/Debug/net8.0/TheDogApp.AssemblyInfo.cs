@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("fd78e5ce-a39b-46bc-8961-c527f9b18f4c")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheDogApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce3f9e91413144e14a1ceeaf98c1911ea10cbd3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+626f966292b7d7f95d7e345650fb4e89b60c6f10")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheDogApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheDogApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
