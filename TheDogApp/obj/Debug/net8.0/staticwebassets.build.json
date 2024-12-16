@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "epqYwvfb/lGm1uRy1sAnXsLH9nQgjW1WNc8F4oESaUw=",
+  "Hash": "4YzqYV4sbZ97rwfGn3CA7WH0uG5MkzA0/jVJ5bQurmA=",
   "Source": "TheDogApp",
   "BasePath": "_content/TheDogApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TheDogApp\\wwwroot",
       "Source": "TheDogApp",
-      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\mlizz\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "Identity": "C:\\Users\\ToddP\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\mlizz\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\ToddP\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\mlizz\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ToddP\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\mlizz\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\ToddP\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\mlizz\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\ToddP\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\mlizz\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\ToddP\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css",
+      "Identity": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css",
       "SourceId": "TheDogApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "TheDogApp.styles.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
+      "Identity": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
       "SourceId": "TheDogApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "TheDogApp.bundle.scp.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\app.css",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\favicon.png",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

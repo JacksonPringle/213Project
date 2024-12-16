@@ -1,4 +1,37 @@
-﻿@page "/viewDog"
+﻿@page "/viewDog/{dogId:int}"
 @attribute [StreamRendering]
+@inject DogService DogService
+
 
 <PageTitle>Dog</PageTitle>
+
+
+@if (dog != null)
+{
+    <div>
+        <p>Name: @dog.Name</p>
+        <p>Breed: @dog.Breed</p>
+        <p>Birthdate: @dog.Birthdate.ToShortDateString()</p>
+        <p>Description: @dog.Description</p>
+        <p>Cost: @dog.Cost</p>
+        <p>Shelter ID: @dog.ShelterID</p>
+        <p>Sex: @dog.Sex</p>
+    </div>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    [Parameter] public int dogId { get; set; }  // Get the dog ID from the URL
+
+    private Dog dog = new Dog();
+
+    protected override async Task OnInitializedAsync()
+    {
+        dog = DogService.GetDogList().FirstOrDefault(d => d.ID == dogId);  // Fetch dog data using the ID
+    }
+}
+
+

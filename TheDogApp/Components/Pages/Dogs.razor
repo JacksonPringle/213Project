@@ -1,4 +1,32 @@
 ﻿@page "/viewDogs"
 @rendermode InteractiveServer
+@inject DogService DogService
+@inject NavigationManager Navigation
 
 <PageTitle>Dogs</PageTitle>
+
+
+<ul>
+    @foreach (var dog in dogs)
+    {
+        <li>@dog.Name is a @dog.Breed
+        <button @onclick="() => ViewDogDetails(dog.ID)">View Details</button>
+        </li>
+    }
+</ul>
+
+@code {
+    private List<Dog> dogs = new List<Dog>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        dogs = DogService.GetDogList();
+    }
+
+    private void ViewDogDetails(int dogId)
+    {
+        Navigation.NavigateTo($"/viewDog/{dogId}");
+    }
+
+}
+

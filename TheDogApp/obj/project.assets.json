@@ -7926,23 +7926,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mlizz\\.nuget\\packages\\": {},
+    "C:\\Users\\ToddP\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\TheDogApp.csproj",
+      "projectUniqueName": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\TheDogApp.csproj",
       "projectName": "TheDogApp",
-      "projectPath": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\TheDogApp.csproj",
-      "packagesPath": "C:\\Users\\mlizz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mlizz\\Desktop\\project\\TheDogApp\\obj\\",
+      "projectPath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\TheDogApp.csproj",
+      "packagesPath": "C:\\Users\\ToddP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mlizz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ToddP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

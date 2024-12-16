@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using TheDogApp.Data;
+using TheDogApp;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContextFactory<TheDogAppContext>(options =>
@@ -10,6 +11,8 @@ builder.Services.AddDbContextFactory<TheDogAppContext>(options =>
 builder.Services.AddQuickGridEntityFrameworkAdapter();
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+builder.Services.AddScoped<DogService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
