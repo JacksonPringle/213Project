@@ -2,3 +2,24 @@
 @attribute [StreamRendering]
 
 <PageTitle>Account</PageTitle>
+
+<div style="display:flex;justify-content:center;">
+    <div id="loginPrompt" style="background-color:lightgray;border:5px solid gray;padding:8px;display:inline-block;display:none;">
+        You're not logged in. Would you like to sign in or create a new account?<br />
+        <div style="display:flex;justify-content:space-evenly;padding:20px;padding-left:50px;padding-right:50px;">
+            <button onclick="location.href='/login'">Log In</button>
+            <button onclick="location.href='/users/create'">Create Account</button>
+            <button onclick="location.href='/createShelter'">Create Shelter</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    if (localStorage.getItem("loggedIn") == null) {
+        localStorage.setItem("loggedIn", "False");
+        document.getElementById("loginPrompt").style.display = "block";
+    }
+    else if (localStorage.getItem("loggedIn") == "False") {
+        document.getElementById("loginPrompt").style.display = "block";
+    }
+</script>
