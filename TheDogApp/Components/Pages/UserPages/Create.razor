@@ -19,6 +19,7 @@
                 <label for="username" class="form-label">Username:</label> 
                 <InputText id="username" @bind-Value="User.Username" class="form-control" /> 
                 <ValidationMessage For="() => User.Username" class="text-danger" /> 
+                Username must be unique and over 6 characters.<br />
             </div>        
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label> 
@@ -29,6 +30,8 @@
                 <label for="password" class="form-label">Password:</label> 
                 <InputText id="password" @bind-Value="User.Password" class="form-control" /> 
                 <ValidationMessage For="() => User.Password" class="text-danger" /> 
+                Password must contain at least 10 characters, <br />
+                including uppercase and lowercase letters and a number.<br />
             </div>        
             <button type="submit" class="btn btn-primary">Create</button>
         </EditForm>
