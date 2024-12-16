@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/ApplicationForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcHBsaWNhdGlvbkZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/Dogs.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2dzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,8 +38,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/SentApplications.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZW50QXBwbGljYXRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/ShelterDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGVsdGVyRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/Shelters.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGVsdGVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/UploadDog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGxvYWREb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/ViewDog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3RG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Pages/ViewShelter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3U2hlbHRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mlizz/Desktop/213 Project/TheDogApp/Components/Routes.razor]
