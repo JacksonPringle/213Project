@@ -3,3 +3,9 @@
 <PageTitle>Dog Adoption Site</PageTitle>
 
 <h1>Welcome to our dog adoption site.</h1>
+
+<script>
+    if (localStorage.getItem("loggedIn") == null) {
+        localStorage.setItem("loggedIn", "False");
+    }
+</script>
