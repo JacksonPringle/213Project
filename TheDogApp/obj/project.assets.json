@@ -7932,11 +7932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\TheDogApp.csproj",
+      "projectUniqueName": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (9)\\TheDogApp\\TheDogApp.csproj",
       "projectName": "TheDogApp",
-      "projectPath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\TheDogApp.csproj",
+      "projectPath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (9)\\TheDogApp\\TheDogApp.csproj",
       "packagesPath": "C:\\Users\\ToddP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (2)\\TheDogApp\\obj\\",
+      "outputPath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (9)\\TheDogApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
