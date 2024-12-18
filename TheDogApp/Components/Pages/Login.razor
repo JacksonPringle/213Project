@@ -1,19 +1,85 @@
 ﻿@page "/login"
-@attribute [StreamRendering]
+@inject IJSRuntime JSRuntime
+@inject SiteUserService SiteUserService
+
+@rendermode InteractiveServer
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.Forms
+@using System.IO
+
+@inject NavigationManager Navigation
+
+@inject IDbContextFactory<TheDogApp.Data.TheDogAppContext> DbFactory
+@inject IWebHostEnvironment WebHostEnvironment
+
 
 <PageTitle>Log In</PageTitle>
 
+<h1>
+    Log In
+</h1>
+
 <form>
-    <label for="namebox">Username or Shelter Username:</label>
-    <input type="text" id="textbox" name="namebox" required><br />
-    <label for="passbox">Password:</label>
-    <input type="text" id="textbox" name="passbox" required><br />
-    <button id="submitButton">Sign In</button>
+    <label for="name">Username:</label>
+    <input id="name" @ref="NameInput" />
+    <br />
+
+    <label for="breed">Password:</label>
+    <input id="breed" @ref="PassInput" />
+    <br />
+
+
+    <button type="button" @onclick="ReadInputValue">Submit</button>
+
 </form>
-<script>
-    var button = document.getElementById("submitButton");
-    button.addEventListener("click", handleSubmit);
-    function handleSubmit () {
+
+<p>Username: @UName</p>
+<p>Password: @Pass</p>
+
+@code {
+    private ElementReference NameInput;
+    private ElementReference PassInput;
+
+
+    private string UName { get; set; } = "";
+    private string Pass { get; set; } = "";
+
+    private async Task SaveToLocalStorage(String str)
+    {
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "loggedID", str);
+    }
+
+
+    private async Task ReadInputValue()
+    {
+        UName = await JSRuntime.InvokeAsync<string>("getInputValue", NameInput);
+        Pass = await JSRuntime.InvokeAsync<string>("getInputValue", PassInput);
+
+        using var context = DbFactory.CreateDbContext();
+        await context.SaveChangesAsync();
+
+        if (Pass == "" || UName == "")
+        {
+            return;
+        }
+        else
+        {
+            List<SiteUser> users = new List<SiteUser>();
+            users = SiteUserService.GetSiteUserList();
+            SiteUser su = users.Where(x => x.Username.Equals(UName) && x.Password.Equals(Pass)).FirstOrDefault();
+            if (su != null)
+            {
+                await SaveToLocalStorage(su.Id.ToString());
+            }
+        }
+
+        await context.SaveChangesAsync();
 
     }
+}
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
 </script>

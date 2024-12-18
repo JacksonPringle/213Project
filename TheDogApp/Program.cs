@@ -13,6 +13,7 @@ builder.Services.AddQuickGridEntityFrameworkAdapter();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddScoped<DogService>();
+builder.Services.AddScoped<SiteUserService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
