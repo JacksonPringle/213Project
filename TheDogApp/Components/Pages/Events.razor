@@ -26,10 +26,17 @@
         </a>
     }
 </div>
+@if (isAdmin.HasValue && isAdmin.Value)
+{
+    <a href="/addEvent">
+    <button type="button">Add Event</button>
+    </a>
+}
 
 
 @code {
     private List<Event> events = new();
+
 
     protected override async Task OnInitializedAsync()
     {
