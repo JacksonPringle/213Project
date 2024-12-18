@@ -1,0 +1,156 @@
+﻿@page "/addEvent"
+@inject IJSRuntime JSRuntime
+@inject EventService EventService
+@inject SiteUserService SiteUserService
+
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.Forms
+@using System.IO
+
+@inject IDbContextFactory<TheDogApp.Data.TheDogAppContext> DbFactory
+@inject IWebHostEnvironment WebHostEnvironment
+@if (isAdmin.HasValue && isAdmin.Value)
+{
+    <PageTitle>Event Adding Page</PageTitle>
+    <h1>Upload an Event</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input id="name" @ref="NameInput" />
+        <br />
+        <label for="StartTime">Start Time:</label>
+        <input id="StartTime" @ref="StartTimeInput" type="datetime-local" />
+        <br />
+        <label for="EndTime">End Time:</label>
+        <input id="EndTime" @ref="EndTimeInput" type="datetime-local" />
+        <br />
+        <label for="description">Description:</label>
+        <input id="description" @ref="DescInput" />
+        <br />
+        <button type="button" @onclick="ReadInputValue">Submit</button>
+    </form>
+}
+else if (isAdmin.HasValue)
+{
+    <PageTitle>Unauthorized Access</PageTitle>
+    <p>You cannot add events as a Non-Admin!</p>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+<h3>User: @tempUsername</h3>
+<h3>Notification: @WarningMessage</h3>
+
+@code {
+    private ElementReference NameInput;
+    private ElementReference StartTimeInput;
+    private ElementReference DescInput;
+    private ElementReference EndTimeInput;
+
+    private bool? isAdmin;
+    private string tempUsername = "";
+    private string WarningMessage = "None";
+
+    private bool _hasCheckedAdmin = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_hasCheckedAdmin)
+        {
+            _hasCheckedAdmin = true;
+            await CheckIfAdmin();
+        }
+    }
+
+    private async Task CheckIfAdmin()
+    {
+        try
+        {
+            string value = await JSRuntime.InvokeAsync<string>("localStorageHelper.getItem", "loggedID");
+
+            if (int.TryParse(value, out int id))
+            {
+                var users = SiteUserService.GetSiteUserList();
+                var user = users.FirstOrDefault(u => u.Id == id);
+
+                if (user != null)
+                {
+                    isAdmin = user.IsAdmin;
+                }
+                else
+                {
+                    isAdmin = null;
+                }
+            }
+            else
+            {
+                isAdmin = null;
+            }
+
+            StateHasChanged();  // Trigger UI updates
+        }
+        catch (Exception ex)
+        {
+            WarningMessage = $"JS Interop Error: {ex.Message}";
+        }
+    }
+
+    private async Task ReadInputValue()
+    {
+        if (isAdmin.HasValue && isAdmin.Value)
+        {
+            var EventName = await JSRuntime.InvokeAsync<string>("getInputValue", NameInput);
+
+            var startTimeString = await JSRuntime.InvokeAsync<string>("getInputValue", StartTimeInput);
+            var StartTime = DateTime.TryParse(startTimeString, out var startDate) ? startDate : DateTime.MinValue;
+
+            var endTimeString = await JSRuntime.InvokeAsync<string>("getInputValue", EndTimeInput);
+            var EndTime = DateTime.TryParse(endTimeString, out var endDate) ? endDate : DateTime.MinValue;
+
+            var Description = await JSRuntime.InvokeAsync<string>("getInputValue", DescInput);
+
+            Event evnt = new Event
+                {
+                    Name = EventName,
+                    StartTime = StartTime,
+                    EndTime = EndTime,
+                    Description = Description
+                };
+
+            try
+            {
+                using var context = DbFactory.CreateDbContext();
+                context.Event.Add(evnt);
+                await context.SaveChangesAsync();
+
+                WarningMessage = "Event Successfully Uploaded";
+            }
+            catch (Exception dbEx)
+            {
+                WarningMessage = $"Database Error: {dbEx.Message}";
+            }
+        }
+        else
+        {
+            WarningMessage = "Unauthorized access: Not an admin user.";
+        }
+    }
+}
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
+</script>
+
+<script>
+    window.localStorageHelper = {
+        getItem: (key) => {
+            return localStorage.getItem(key);
+        }
+    };
+</script>

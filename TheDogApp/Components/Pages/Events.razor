@@ -5,7 +5,7 @@
 @inject EventService EventService
 @inject NavigationManager Navigation
 @inject IJSRuntime JSRuntime
-
+@inject SiteUserService SiteUserService
 
 
 
@@ -40,7 +40,67 @@
     {
         Navigation.NavigateTo($"/viewEvent/{EventId}");
     }
+    private bool? isAdmin;
+    private string tempUsername = "";
+    private string WarningMessage = "None";
 
+    private bool _hasCheckedAdmin = false;
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_hasCheckedAdmin)
+        {
+            _hasCheckedAdmin = true;
+            await CheckIfAdmin();
+        }
+    }
 
+    private async Task CheckIfAdmin()
+    {
+        try
+        {
+            string value = await JSRuntime.InvokeAsync<string>("localStorageHelper.getItem", "loggedID");
+
+            if (int.TryParse(value, out int id))
+            {
+                var users = SiteUserService.GetSiteUserList();
+                var user = users.FirstOrDefault(u => u.Id == id);
+
+                if (user != null)
+                {
+                    isAdmin = user.IsAdmin;
+                }
+                else
+                {
+                    isAdmin = null;
+                }
+            }
+            else
+            {
+                isAdmin = null;
+            }
+
+            StateHasChanged();  // Trigger UI updates
+        }
+        catch (Exception ex)
+        {
+            WarningMessage = $"JS Interop Error: {ex.Message}";
+        }
+    }
+
+ 
 }
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
+</script>
+
+<script>
+    window.localStorageHelper = {
+        getItem: (key) => {
+            return localStorage.getItem(key);
+        }
+    };
+</script>

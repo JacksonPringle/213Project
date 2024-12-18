@@ -1,7 +1,15 @@
 ﻿@page "/viewEvent/{EventId:int}"
-@attribute [StreamRendering]
 @inject EventService EventService
+@inject SiteUserService SiteUserService
+@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.Forms
+@using System.IO
 
+@inject IDbContextFactory<TheDogApp.Data.TheDogAppContext> DbFactory
+@inject IWebHostEnvironment WebHostEnvironment
 @if(evnt != null){
     <PageTitle>@evnt.Name</PageTitle>
     <div class="row justify-content-center">
@@ -14,12 +22,19 @@
                     </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item lan" style="text-align: center; border: 1px solid #FFC82E">@evnt.StartTime - @evnt.EndTime</li>
-                    <li class="list-group-item lan" style="text-align: center; border: 1px solid #FFC82E">@evnt.Description</li>
+                    @if(evnt.Description != null){<li class="list-group-item lan" style="text-align: center; border: 1px solid #FFC82E">@evnt.Description</li>}
+                   
+                    
                 </ul>
+                @if (isAdmin.HasValue && isAdmin.Value)
+                {
+                    <button type="button" @onclick="DeleteEvent">Delete Event</button>
+                }
             </div>
         </div>
         <div class="col-sm-4"></div>
     </div>
+   
 }
 else
 {
@@ -35,6 +50,77 @@ else
     {
         evnt = EventService.GetEventList().FirstOrDefault(e => e.EventId == EventId);  // Fetch dog data using the ID
     }
+    private bool? isAdmin;
+    private string tempUsername = "";
+    private string WarningMessage = "None";
+
+    private bool _hasCheckedAdmin = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_hasCheckedAdmin)
+        {
+            _hasCheckedAdmin = true;
+            await CheckIfAdmin();
+        }
+    }
+
+    private async Task DeleteEvent()
+    {
+        var context = DbFactory.CreateDbContext();
+
+        Event itemToRemove = EventService.GetEventList().FirstOrDefault(e => e.EventId == EventId);
+        context.Event.Remove(itemToRemove);
+        await context.SaveChangesAsync();
+    }
+
+    private async Task CheckIfAdmin()
+    {
+        try
+        {
+            string value = await JSRuntime.InvokeAsync<string>("localStorageHelper.getItem", "loggedID");
+
+            if (int.TryParse(value, out int id))
+            {
+                var users = SiteUserService.GetSiteUserList();
+                var user = users.FirstOrDefault(u => u.Id == id);
+
+                if (user != null)
+                {
+                    isAdmin = user.IsAdmin;
+                }
+                else
+                {
+                    isAdmin = null;
+                }
+                StateHasChanged();
+            }
+            else
+            {
+                isAdmin = null;
+            }
+
+            StateHasChanged();  // Trigger UI updates
+        }
+        catch (Exception ex)
+        {
+            WarningMessage = $"JS Interop Error: {ex.Message}";
+        }
+    }
 
 }
 
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
+</script>
+
+<script>
+    window.localStorageHelper = {
+        getItem: (key) => {
+            return localStorage.getItem(key);
+        }
+    };
+</script>
