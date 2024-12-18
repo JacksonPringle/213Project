@@ -1,6 +1,7 @@
 ﻿@page "/upload"
 @inject IJSRuntime JSRuntime
 @inject DogService DogService
+@inject SiteUserService SiteUserService
 
 @rendermode InteractiveServer
 @using Microsoft.EntityFrameworkCore
@@ -37,13 +38,13 @@
     <br />
 
     <label for="cost">Cost to Adopt:</label>
-    <input id="cost" @ref="CostInput" type="number" step ="0.01" min="0"/>
+    <input id="cost" @ref="CostInput" type="number" step="0.01" min="0" />
     <br />
 
     <label for="shelterId">Shelter ID:</label>
     <input id="shelterId" @ref="ShelterIdInput" type="number" step="1" min="0" />
     <br />
-    
+
     <label for="dateAdded">Date Added to Shelter:</label>
     <input id="dateAdded" @ref="DateAddedInput" type="date" />
     <br />
@@ -85,7 +86,13 @@
 <p>Adoption Status: @AdoptionStatus</p>
 <p>Health Info: @HealthInfo</p>
 
+
+
 <p>Uploaded Photo: @UploadedPhotoPath</p>
+
+<h3>User: @tempUsername</h3>
+<h3>Notification: @WarningMessage</h3>
+
 @if (!string.IsNullOrEmpty(UploadedPhotoPath))
 {
     <img src="@UploadedPhotoPath" alt="Uploaded Photo" style="max-width: 200px; height: auto;" />
@@ -116,57 +123,108 @@
     private string AdoptionStatus { get; set; } = "";
     private string HealthInfo { get; set; } = "";
 
+    private string WarningMessage = "None";
+
     private string UploadedPhotoPath { get; set; } = "";
 
     private IBrowserFile UploadedFile;
 
+    private bool? isAdmin;
+
+    private string tempUsername = "";
+
+    private async Task CheckIfAdmin()
+    {
+
+        string value = "";
+        value = await JSRuntime.InvokeAsync<string>("localStorageHelper.getItem", "loggedID");
+
+        //tempUsername = "hi";
+        if (int.TryParse(value, out int id))
+        {
+            var users = SiteUserService.GetSiteUserList();
+            var user = users.FirstOrDefault(u => u.Id == id);
+            //tempUsername = id.ToString();
+
+            if (user != null)
+            {
+                isAdmin = user.IsAdmin;
+            }
+            else
+            {
+                isAdmin = null; // User not found
+            }
+        }
+        else
+        {
+            isAdmin = null; // Invalid ID format
+        }
+
+    }
+
     private async Task ReadInputValue()
     {
-        DogName = await JSRuntime.InvokeAsync<string>("getInputValue", NameInput);
-        DogBreed = await JSRuntime.InvokeAsync<string>("getInputValue", BreedInput);
+        await CheckIfAdmin();
+        if (isAdmin.HasValue && isAdmin.Value)
+        {
+            DogName = await JSRuntime.InvokeAsync<string>("getInputValue", NameInput);
+            DogBreed = await JSRuntime.InvokeAsync<string>("getInputValue", BreedInput);
 
-        var dateString = await JSRuntime.InvokeAsync<string>("getInputValue", BirthdateInput);
-        Birthdate = DateTime.TryParse(dateString, out var date) ? date : DateTime.MinValue;
+            var dateString = await JSRuntime.InvokeAsync<string>("getInputValue", BirthdateInput);
+            Birthdate = DateTime.TryParse(dateString, out var date) ? date : DateTime.MinValue;
 
-        DogDescription = await JSRuntime.InvokeAsync<string>("getInputValue", DescInput);
+            DogDescription = await JSRuntime.InvokeAsync<string>("getInputValue", DescInput);
 
-        var numberString = await JSRuntime.InvokeAsync<string>("getInputValue", CostInput);
-        DogCost = decimal.TryParse(numberString, out var number) ? number : 0;
+            var numberString = await JSRuntime.InvokeAsync<string>("getInputValue", CostInput);
+            DogCost = decimal.TryParse(numberString, out var number) ? number : 0;
 
-        var numberString2 = await JSRuntime.InvokeAsync<string>("getInputValue", ShelterIdInput);
-        ShelterID = int.TryParse(numberString2, out var number2) ? number2 : 0;
+            var numberString2 = await JSRuntime.InvokeAsync<string>("getInputValue", ShelterIdInput);
+            ShelterID = int.TryParse(numberString2, out var number2) ? number2 : 0;
 
-        var dateString2 = await JSRuntime.InvokeAsync<string>("getInputValue", DateAddedInput);
-        DateAdded = DateTime.TryParse(dateString2, out var date2) ? date2 : DateTime.MinValue;
+            var dateString2 = await JSRuntime.InvokeAsync<string>("getInputValue", DateAddedInput);
+            DateAdded = DateTime.TryParse(dateString2, out var date2) ? date2 : DateTime.MinValue;
 
-        Sex = await JSRuntime.InvokeAsync<string>("getInputValue", SexInput);
+            Sex = await JSRuntime.InvokeAsync<string>("getInputValue", SexInput);
 
-        var numberString3 = await JSRuntime.InvokeAsync<string>("getInputValue", SizeInput);
-        Size = int.TryParse(numberString3, out var number3) ? number3 : 0;
+            var numberString3 = await JSRuntime.InvokeAsync<string>("getInputValue", SizeInput);
+            Size = int.TryParse(numberString3, out var number3) ? number3 : 0;
 
-        AdoptionStatus = await JSRuntime.InvokeAsync<string>("getInputValue", AdoptionInput);
-        HealthInfo = await JSRuntime.InvokeAsync<string>("getInputValue", HealthInput);
+            AdoptionStatus = await JSRuntime.InvokeAsync<string>("getInputValue", AdoptionInput);
+            HealthInfo = await JSRuntime.InvokeAsync<string>("getInputValue", HealthInput);
 
-        Dog dog = new Dog();
-        dog.Name = DogName;
-        dog.Breed = DogBreed;
-        dog.Birthdate = Birthdate;
-        dog.Description = DogDescription;
-        dog.Cost = DogCost;
-        dog.ShelterID = ShelterID;
-        dog.DateAdded = DateAdded;
-        dog.Sex = Sex;
+            Dog dog = new Dog();
+            dog.Name = DogName;
+            dog.Breed = DogBreed;
+            dog.Birthdate = Birthdate;
+            dog.Description = DogDescription;
+            dog.Cost = DogCost;
+            dog.ShelterID = ShelterID;
+            dog.DateAdded = DateAdded;
+            dog.Sex = Sex;
 
-        dog.SizeLbs = Size;
-        dog.AdoptionStatus = AdoptionStatus;
-        dog.HealthInfo = HealthInfo;
+            dog.SizeLbs = Size;
+            dog.AdoptionStatus = AdoptionStatus;
+            dog.HealthInfo = HealthInfo;
 
-        dog.ImagePath = UploadedPhotoPath;
+            dog.ImagePath = UploadedPhotoPath;
 
-        using var context = DbFactory.CreateDbContext();
-        context.Dog.Add(dog);
-        await context.SaveChangesAsync();
-        
+            using var context = DbFactory.CreateDbContext();
+            context.Dog.Add(dog);
+            await context.SaveChangesAsync();
+            WarningMessage = "Dog Successfully Uploaded";
+        }
+        else
+        {
+            if (!isAdmin.HasValue)
+            {
+                WarningMessage = "Your isAdmin value is null; You cannot upload dogs";
+            }
+            else
+            {
+                WarningMessage = "You cannot upload dogs as a non-admin";
+            }
+        }
+
     }
 
     private async Task HandleFileSelected(InputFileChangeEventArgs e)
@@ -201,3 +259,10 @@
     };
 </script>
 
+<script>
+    window.localStorageHelper = {
+        getItem: (key) => {
+            return localStorage.getItem(key);
+        }
+    };
+</script>
