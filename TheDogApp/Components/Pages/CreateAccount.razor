@@ -1,26 +1,36 @@
 ﻿@page "/createAccount"
-@attribute [StreamRendering]
+@inject IJSRuntime JSRuntime
+
+@rendermode InteractiveServer
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.Forms
+@using System.IO
+
+@inject NavigationManager Navigation
+
+@inject IDbContextFactory<TheDogApp.Data.TheDogAppContext> DbFactory
+@inject IWebHostEnvironment WebHostEnvironment
 
 <PageTitle>Create New Account</PageTitle>
 
 <div>
     <div style="background-color: antiquewhite;border: 5px solid blue;margin:10px;">
-        <div style="display:flex;justify-content:center;"
+        <div style="display:flex;justify-content:center;">
         <h1>Create Account</h1>
         </div>
-        <div style="display:flex;justify-content:center;"
+        <div style="display:flex;justify-content:center;">
             <form>
                 <label for="phonebox">Phone Number:</label>
-                <input type="text" id="textbox" name="phonebox"><br />
+                <input type="text" id="textbox" name="phonebox" @ref = "PhoneInput"><br />
                 <label for="usernamebox">Username:</label>
-                <input type="text" id="textbox" name="usernamebox" required><br />
+                <input type="text" id="textbox" name="usernamebox" @ref="UsernameInput" required><br />
                 Username must be unique and over 6 characters.<br />
                 <label for="emailbox">Email:</label>
-                <input type="text" id="textbox" name="emailbox"><br />
-                <label for="passbox">Passoword:</label>
-                <input type="text" id="textbox" name="passbox" required><br />
+                <input type="text" id="textbox" name="emailbox" @ref="EmailInput"><br />
+                <label for="passbox">Password:</label>
+                <input type="text" id="textbox" name="passbox" @ref="PasswordInput" required><br />
                 Username must contain at least 10 characters, including uppercase and lowercase letters and a number.<br />
-                <button>Create Account</button>
+                <button type="button" @onclick="ReadInputValue">Create Account</button>
             </form>
         </div>
         <div style="display:flex;justify-content:center;">
@@ -28,3 +38,56 @@
         </div>
     </div>
 </div>
+
+<p>Username: @Username</p>
+
+
+@code {
+    private ElementReference PhoneInput;
+    private ElementReference UsernameInput;
+    private ElementReference EmailInput;
+    private ElementReference PasswordInput;
+
+
+
+    private string PhoneNumber { get; set; } = "";
+    private string Username { get; set; } = "";
+    private string Email { get; set; } = "";
+    private string Password { get; set; } = "";
+
+
+
+    private async Task ReadInputValue()
+    {
+        PhoneNumber = await JSRuntime.InvokeAsync<string>("getInputValue", PhoneInput);
+        Username = await JSRuntime.InvokeAsync<string>("getInputValue", UsernameInput);
+        Email = await JSRuntime.InvokeAsync<string>("getInputValue", EmailInput);
+        Password = await JSRuntime.InvokeAsync<string>("getInputValue", PasswordInput);
+
+        //WE SHOULD ADD LOGIC TO CHECK IF USERNAME IS TAKEN
+        //AND PROBABLY TO CHECK WHETHER INPUTS MEET OUR PARAMETERS, TOO
+        bool infoIsValid = true;
+
+        if(infoIsValid)
+        {
+            SiteUser newUser = new SiteUser();
+            newUser.PhoneNumber = PhoneNumber;
+            newUser.Username = Username;
+            newUser.Email = Email;
+            newUser.Password = Password;
+
+        
+            using var context = DbFactory.CreateDbContext();
+            context.SiteUser.Add(newUser);
+            await context.SaveChangesAsync();
+        }
+
+    }
+}
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
+</script>
+

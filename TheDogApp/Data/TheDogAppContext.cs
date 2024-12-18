@@ -17,5 +17,6 @@ namespace TheDogApp.Data
 
         public DbSet<TheDogApp.Dog> Dog { get; set; } = default!;
         public DbSet<TheDogApp.Components.User> User { get; set; } = default!;
+        public DbSet<TheDogApp.SiteUser> SiteUser { get; set; } = default!;
     }
 }

@@ -1,75 +1,79 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
       "PackagePath": "staticwebassets\\TheDogApp.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\app.css",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\11f8d31a-22e4-48d9-b32e-ef2fa6a2f6f9_Question.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\11f8d31a-22e4-48d9-b32e-ef2fa6a2f6f9_Question.jpg",
       "PackagePath": "staticwebassets\\images\\11f8d31a-22e4-48d9-b32e-ef2fa6a2f6f9_Question.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\45181f2c-1dd0-4714-86c8-5449e5b8f527_Question.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\45181f2c-1dd0-4714-86c8-5449e5b8f527_Question.jpg",
       "PackagePath": "staticwebassets\\images\\45181f2c-1dd0-4714-86c8-5449e5b8f527_Question.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\50d3a394-07ef-49e9-8d7d-fe09d03846eb_Pomeranian.JPG",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\50d3a394-07ef-49e9-8d7d-fe09d03846eb_Pomeranian.JPG",
       "PackagePath": "staticwebassets\\images\\50d3a394-07ef-49e9-8d7d-fe09d03846eb_Pomeranian.JPG"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\60053237-932c-49b5-944d-9fbdb55192e7_Question.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\60053237-932c-49b5-944d-9fbdb55192e7_Question.jpg",
       "PackagePath": "staticwebassets\\images\\60053237-932c-49b5-944d-9fbdb55192e7_Question.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\6a089715-2240-47b5-b78f-d6e86424fc58_Question.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\6a089715-2240-47b5-b78f-d6e86424fc58_Question.jpg",
       "PackagePath": "staticwebassets\\images\\6a089715-2240-47b5-b78f-d6e86424fc58_Question.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\6da3c815-42b4-42cb-8e26-3064e979771b_Pomeranian.JPG",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\6da3c815-42b4-42cb-8e26-3064e979771b_Pomeranian.JPG",
       "PackagePath": "staticwebassets\\images\\6da3c815-42b4-42cb-8e26-3064e979771b_Pomeranian.JPG"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\Australian Shepherd 1.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\Australian Shepherd 1.jpg",
       "PackagePath": "staticwebassets\\images\\Australian Shepherd 1.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\Australian Shepherd 2.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\Australian Shepherd 2.jpg",
       "PackagePath": "staticwebassets\\images\\Australian Shepherd 2.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\German Shepherd 1.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\German Shepherd 1.jpg",
       "PackagePath": "staticwebassets\\images\\German Shepherd 1.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\German Shepherd 2.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\German Shepherd 2.jpg",
       "PackagePath": "staticwebassets\\images\\German Shepherd 2.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\Golden Retriever 1.jpg",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\Golden Retriever 1.jpg",
       "PackagePath": "staticwebassets\\images\\Golden Retriever 1.jpg"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\b2ca9c36-45e3-4274-9e6d-eb0ee0829b6e_Pomeranian.JPG",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\ac60bfb5-6bd0-460f-9207-5aefdce44af4_Pomeranian.JPG",
+      "PackagePath": "staticwebassets\\images\\ac60bfb5-6bd0-460f-9207-5aefdce44af4_Pomeranian.JPG"
+    },
+    {
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\b2ca9c36-45e3-4274-9e6d-eb0ee0829b6e_Pomeranian.JPG",
       "PackagePath": "staticwebassets\\images\\b2ca9c36-45e3-4274-9e6d-eb0ee0829b6e_Pomeranian.JPG"
     },
     {
-      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\wwwroot\\images\\e2eb824d-b9ca-49aa-8071-aea5d7cffb28_Pomeranian.JPG",
+      "Id": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (11)\\TheDogApp\\wwwroot\\images\\e2eb824d-b9ca-49aa-8071-aea5d7cffb28_Pomeranian.JPG",
       "PackagePath": "staticwebassets\\images\\e2eb824d-b9ca-49aa-8071-aea5d7cffb28_Pomeranian.JPG"
     },
     {
