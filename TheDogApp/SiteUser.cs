@@ -9,15 +9,18 @@
 
         public string? PhoneNumber { get; set; }
 
+        public bool ? IsAdmin { get; set; }
+
         public SiteUser() { }
 
-        public SiteUser(int id, string username, string? email, string password, string? phoneNumber)
+        public SiteUser(int id, string username, string? email, string password, string? phoneNumber, bool? isAdmin)
         {
             Id = id;
             Username = username;
             Email = email;
             Password = password;
             PhoneNumber = phoneNumber;
+            IsAdmin = isAdmin;
         }
     }
 }
