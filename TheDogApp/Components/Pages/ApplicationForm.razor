@@ -1,4 +1,107 @@
-﻿@page "/application"
-@attribute [StreamRendering]
+﻿@page "/viewDog/{dogId:int}/apply"
 
-<PageTitle>Application</PageTitle>
+@inject IJSRuntime JSRuntime
+
+@inject DogService DogService
+@inject NavigationManager Navigation
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.Forms
+@using System.IO
+@inject IDbContextFactory<TheDogApp.Data.TheDogAppContext> DbFactory
+
+
+
+<PageTitle>Dog Application</PageTitle>
+
+<form>
+    <label for="name">Name:</label>
+    <input id="name" @ref="NameInput" />
+    <br />
+
+    <label for="info">Describe Yourself:</label>
+    <textarea id="info" @ref="AppParagraphInput" rows="4" cols="50"></textarea>
+    <br />
+
+    <label for="income">Monthly Income:</label>
+    <input id="income" @ref="IncomeInput" type="number" step="0.01" min="0" />
+    <br />
+
+    <button type="button" @onclick="ApplyForAdoption">Submit Application</button>
+
+
+
+</form>
+
+    <div style="background-color: #EEEEEE;margin: 15px;line-height: 1.5">
+        
+    </div>
+
+    
+
+
+@code {
+    [Parameter] public int dogId { get; set; }  // Get the dog ID from the URL
+
+    private ElementReference NameInput;
+    private ElementReference AppParagraphInput;
+    private ElementReference IncomeInput;
+
+    private string Name { get; set; } = "";
+    private string AppParagraph { get; set; } = "";
+    private DateTime AppDate = DateTime.Now;
+
+    private decimal Income { get; set; }
+
+    private int UserId { get; set; }
+
+    private AdoptApp app = new AdoptApp();
+
+    private async Task ApplyForAdoption()
+    {
+
+        Name = await JSRuntime.InvokeAsync<string>("getInputValue", NameInput);
+        AppParagraph = await JSRuntime.InvokeAsync<string>("getInputValue", AppParagraphInput);
+
+        var numberString = await JSRuntime.InvokeAsync<string>("getInputValue", IncomeInput);
+        Income = decimal.TryParse(numberString, out var number) ? number : 0;
+
+        List<Dog> dogs = DogService.GetDogList();
+        var ourDog = dogs.FirstOrDefault(u => u.ID == dogId);
+        if((ourDog.AdoptionStatus != "Pending") && (ourDog.AdoptionStatus != "Adopted"))
+        {
+            ourDog.AdoptionStatus = "Pending";
+            app.Status = "Pending";
+            string value = "";
+            value = await JSRuntime.InvokeAsync<string>("localStorageHelper.getItem", "loggedID");
+            int.TryParse(value, out int nowId);
+            app.UserId = nowId;
+            app.DogId = dogId;
+
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        //dog = DogService.GetDogList().FirstOrDefault(d => d.ID == dogId);  // Fetch dog data using the ID
+    }
+
+    private async Task ReadInputValue()
+    {
+
+    }
+
+}
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
+</script>
+
+<script>
+    window.localStorageHelper = {
+        getItem: (key) => {
+            return localStorage.getItem(key);
+        }
+    };
+</script>

@@ -12,6 +12,9 @@ builder.Services.AddQuickGridEntityFrameworkAdapter();
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+
+builder.Services.AddScoped<AdoptAppService>();
+
 builder.Services.AddScoped<DogService>();
 builder.Services.AddScoped<SiteUserService>();
 builder.Services.AddScoped<EventService>();
