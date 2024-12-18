@@ -5,6 +5,7 @@ namespace TheDogApp
     public class Dog
     {
 
+        
         public int ID { get; set; }
         public string? Name { get; set; }
         public string? Breed { get; set; }
@@ -38,6 +39,10 @@ namespace TheDogApp
             ImagePath = imagePath;
         }
 
+        public int getAgeInDays()
+        {
+            return (DateTime.Now - Birthdate).Days;
+        }
         public override string ToString()
         {
             int daysOld = (DateTime.Now - Birthdate).Days;
