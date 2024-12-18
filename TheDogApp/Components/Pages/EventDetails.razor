@@ -1,0 +1,40 @@
+﻿@page "/viewEvent/{EventId:int}"
+@attribute [StreamRendering]
+@inject EventService EventService
+
+@if(evnt != null){
+    <PageTitle>@evnt.Name</PageTitle>
+    <div class="row justify-content-center">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <h4 class="center"> Event Info: </h4>
+            <div class="card lan" style="width: 450px; margin-left: auto; margin-right: auto;">
+                <div class="card-header" style="text-align: center">
+                    @evnt.Name
+                    </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item lan" style="text-align: center; border: 1px solid #FFC82E">@evnt.StartTime - @evnt.EndTime</li>
+                    <li class="list-group-item lan" style="text-align: center; border: 1px solid #FFC82E">@evnt.Description</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+}
+else
+{
+    <PageTitle>Event Not Found</PageTitle>
+}
+
+@code {
+    [Parameter] public int EventId { get; set; }  // Get the event ID from the URL
+    private List<Event> events = new();
+    Event evnt = new Event();
+
+    protected override async Task OnInitializedAsync()
+    {
+        evnt = EventService.GetEventList().FirstOrDefault(e => e.EventId == EventId);  // Fetch dog data using the ID
+    }
+
+}
+

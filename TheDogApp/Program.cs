@@ -14,6 +14,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddScoped<DogService>();
 builder.Services.AddScoped<SiteUserService>();
+builder.Services.AddScoped<EventService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

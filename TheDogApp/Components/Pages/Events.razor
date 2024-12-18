@@ -1,3 +1,46 @@
-﻿@page "/events"
+﻿@page "/viewEvents"
+@namespace TheDogApp
+@using TheDogApp
+@rendermode InteractiveServer
+@inject EventService EventService
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+
+
+
+
 
 <PageTitle>Events</PageTitle>
+
+<div style="background-color: #EEEBE8;margin: 15px;line-height: 1.8">
+    @foreach (var e in events)
+    {
+        <a href="/viewEvent/@e.EventId" style="text-decoration: none">
+            <div class="card bg-success mb-3" style="color: #FFC82E; max-width: 450px;">
+                <div class="card-header">@e.Name</div>
+                <div class="card-body">
+                    <h5 class="card-title">@e.Name</h5>
+                    <p class="card-text">@e.StartTime - @e.EndTime</p>
+                </div>
+            </div>
+        </a>
+    }
+</div>
+
+
+@code {
+    private List<Event> events = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        events = EventService.GetEventList();
+    }
+
+    private void ViewEventDetails(int EventId)
+    {
+        Navigation.NavigateTo($"/viewEvent/{EventId}");
+    }
+
+
+
+}
