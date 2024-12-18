@@ -1,4 +1,129 @@
 ﻿@page "/messages"
-@attribute [StreamRendering]
+@namespace TheDogApp
+@rendermode InteractiveServer
+@inject MessageService MessageService
+@inject SiteUserService SiteUserService
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+@inject SiteUserService SiteUserService
+
+
+
 
 <PageTitle>Messages</PageTitle>
+<!--
+@if(isAdmin.HasValue && isAdmin.Value && Conversations != null){
+    <ul>
+    @foreach (var c in Conversations){
+        <a href="/messages/@c.Conversation">
+        <li>
+            @c.Text
+        </li>
+        </a>
+    }
+    </ul>
+}
+else if (isAdmin.HasValue)
+{
+    <a href="/messages/@last.Conversation">
+        <li>
+            @last.Text
+        </li>
+    </a>
+}
+else
+{
+    <a href="/login">
+        <li>
+            You must log in to send a message
+        </li>
+    </a>
+}
+
+
+-->
+
+@code {
+    private List<Message> Conversations = new();
+    private Message last = new();
+
+    private void ViewConversationDetails(int Conversation)
+    {
+        Navigation.NavigateTo($"/viewEvent/{Conversation}");
+    }
+    private bool? isAdmin;
+    private string tempUsername = "";
+    private string WarningMessage = "None";
+    private int currUser;
+
+    private bool _hasCheckedAdmin = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_hasCheckedAdmin)
+        {
+            _hasCheckedAdmin = true;
+            await CheckIfAdmin();
+        }
+    }
+
+    private async Task CheckIfAdmin()
+    {
+        try
+        {
+            string value = await JSRuntime.InvokeAsync<string>("localStorageHelper.getItem", "loggedID");
+
+            if (int.TryParse(value, out int id))
+            {
+                var users = SiteUserService.GetSiteUserList();
+                var user = users.FirstOrDefault(u => u.Id == id);
+
+
+                if (user != null)
+                {
+                    currUser = user.Id;
+                    isAdmin = user.IsAdmin;
+                }
+                else
+                {
+                    isAdmin = null;
+                }
+            }
+            else
+            {
+                isAdmin = null;
+            }
+
+            StateHasChanged();  // Trigger UI updates
+        }
+        catch (Exception ex)
+        {
+            WarningMessage = $"JS Interop Error: {ex.Message}";
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        List<SiteUser> users = SiteUserService.GetSiteUserList();
+        last = MessageService.GetMessageList().LastOrDefault(m => m.Conversation == currUser);
+        foreach (SiteUser uid in users)
+        {
+            Conversations.Add(MessageService.GetMessageList().LastOrDefault(m => m.Conversation == uid.Id));
+
+        }
+    }
+}
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
+</script>
+
+<script>
+    window.localStorageHelper = {
+        getItem: (key) => {
+            return localStorage.getItem(key);
+        }
+    };
+</script>

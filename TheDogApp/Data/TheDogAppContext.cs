@@ -20,5 +20,6 @@ namespace TheDogApp.Data
         public DbSet<TheDogApp.SiteUser> SiteUser { get; set; } = default!;
         public DbSet<TheDogApp.Event> Event { get; set; } = default!;
         public DbSet<TheDogApp.AdoptApp> AdoptApp { get; set; } = default!;
+        public DbSet<TheDogApp.Message> Message { get; set; } = default!;
     }
 }

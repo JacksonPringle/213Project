@@ -18,6 +18,8 @@ builder.Services.AddScoped<AdoptAppService>();
 builder.Services.AddScoped<DogService>();
 builder.Services.AddScoped<SiteUserService>();
 builder.Services.AddScoped<EventService>();
+builder.Services.AddScoped<AdoptAppService>();
+builder.Services.AddScoped<MessageService>();  
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

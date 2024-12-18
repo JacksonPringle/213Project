@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheDogApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35c6d99e6b4166d5b351bd9e730a7fdae3b947be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a846e6c07de55e2c399f5acdb57923abaf481b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheDogApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheDogApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

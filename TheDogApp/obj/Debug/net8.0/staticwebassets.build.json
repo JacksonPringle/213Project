@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "htxBuGPJeuIiEncozmk60rQXgzKoZh4b2/7nNYoRNms=",
+  "Hash": "tZLoROxu2t+Je4DOCrkRr8dSFH2wx9hl1kDfBed0cZQ=",
   "Source": "TheDogApp",
   "BasePath": "_content/TheDogApp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "TheDogApp\\wwwroot",
       "Source": "TheDogApp",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "Pattern": "**"
     }
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "C:\\Users\\Adamin\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.11\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css",
       "SourceId": "TheDogApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "TheDogApp.styles.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\TheDogApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css",
       "SourceId": "TheDogApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "TheDogApp.bundle.scp.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TheDogApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\app.css",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\favicon.png",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\11f8d31a-22e4-48d9-b32e-ef2fa6a2f6f9_Question.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\11f8d31a-22e4-48d9-b32e-ef2fa6a2f6f9_Question.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/11f8d31a-22e4-48d9-b32e-ef2fa6a2f6f9_Question.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\11f8d31a-22e4-48d9-b32e-ef2fa6a2f6f9_Question.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\45181f2c-1dd0-4714-86c8-5449e5b8f527_Question.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\45181f2c-1dd0-4714-86c8-5449e5b8f527_Question.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/45181f2c-1dd0-4714-86c8-5449e5b8f527_Question.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\45181f2c-1dd0-4714-86c8-5449e5b8f527_Question.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\50d3a394-07ef-49e9-8d7d-fe09d03846eb_Pomeranian.JPG",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\50d3a394-07ef-49e9-8d7d-fe09d03846eb_Pomeranian.JPG",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/50d3a394-07ef-49e9-8d7d-fe09d03846eb_Pomeranian.JPG",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\50d3a394-07ef-49e9-8d7d-fe09d03846eb_Pomeranian.JPG"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\60053237-932c-49b5-944d-9fbdb55192e7_Question.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\60053237-932c-49b5-944d-9fbdb55192e7_Question.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/60053237-932c-49b5-944d-9fbdb55192e7_Question.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\60053237-932c-49b5-944d-9fbdb55192e7_Question.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\6a089715-2240-47b5-b78f-d6e86424fc58_Question.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\6a089715-2240-47b5-b78f-d6e86424fc58_Question.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/6a089715-2240-47b5-b78f-d6e86424fc58_Question.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6a089715-2240-47b5-b78f-d6e86424fc58_Question.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\6da3c815-42b4-42cb-8e26-3064e979771b_Pomeranian.JPG",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\6da3c815-42b4-42cb-8e26-3064e979771b_Pomeranian.JPG",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/6da3c815-42b4-42cb-8e26-3064e979771b_Pomeranian.JPG",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6da3c815-42b4-42cb-8e26-3064e979771b_Pomeranian.JPG"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\8f65a964-7607-49d4-8ba9-7d773d4ac664_wolf.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\8f65a964-7607-49d4-8ba9-7d773d4ac664_wolf.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/8f65a964-7607-49d4-8ba9-7d773d4ac664_wolf.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8f65a964-7607-49d4-8ba9-7d773d4ac664_wolf.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\ac60bfb5-6bd0-460f-9207-5aefdce44af4_Pomeranian.JPG",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\ac60bfb5-6bd0-460f-9207-5aefdce44af4_Pomeranian.JPG",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/ac60bfb5-6bd0-460f-9207-5aefdce44af4_Pomeranian.JPG",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ac60bfb5-6bd0-460f-9207-5aefdce44af4_Pomeranian.JPG"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\Australian Shepherd 1.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\Australian Shepherd 1.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/Australian Shepherd 1.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Australian Shepherd 1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\Australian Shepherd 2.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\Australian Shepherd 2.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/Australian Shepherd 2.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Australian Shepherd 2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\b2ca9c36-45e3-4274-9e6d-eb0ee0829b6e_Pomeranian.JPG",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\b2ca9c36-45e3-4274-9e6d-eb0ee0829b6e_Pomeranian.JPG",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/b2ca9c36-45e3-4274-9e6d-eb0ee0829b6e_Pomeranian.JPG",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b2ca9c36-45e3-4274-9e6d-eb0ee0829b6e_Pomeranian.JPG"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\df79f0fb-a6b2-491c-a1bf-810485e2bdad_dachsund.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\df79f0fb-a6b2-491c-a1bf-810485e2bdad_dachsund.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/df79f0fb-a6b2-491c-a1bf-810485e2bdad_dachsund.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\df79f0fb-a6b2-491c-a1bf-810485e2bdad_dachsund.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\e2eb824d-b9ca-49aa-8071-aea5d7cffb28_Pomeranian.JPG",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\e2eb824d-b9ca-49aa-8071-aea5d7cffb28_Pomeranian.JPG",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/e2eb824d-b9ca-49aa-8071-aea5d7cffb28_Pomeranian.JPG",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\e2eb824d-b9ca-49aa-8071-aea5d7cffb28_Pomeranian.JPG"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\German Shepherd 1.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\German Shepherd 1.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/German Shepherd 1.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\German Shepherd 1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\German Shepherd 2.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\German Shepherd 2.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/German Shepherd 2.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\German Shepherd 2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\images\\Golden Retriever 1.jpg",
+      "Identity": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\images\\Golden Retriever 1.jpg",
       "SourceId": "TheDogApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Adamin\\Source\\Repos\\213Project\\TheDogApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adamin\\source\\repos\\213Project\\TheDogApp\\wwwroot\\",
       "BasePath": "_content/TheDogApp",
       "RelativePath": "images/Golden Retriever 1.jpg",
       "AssetKind": "All",

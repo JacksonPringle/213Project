@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TheDogApp.Data;
 
@@ -11,9 +12,11 @@ using TheDogApp.Data;
 namespace TheDogApp.Migrations
 {
     [DbContext(typeof(TheDogAppContext))]
-    partial class TheDogAppContextModelSnapshot : ModelSnapshot
+    [Migration("20241218105255_MessageMigration")]
+    partial class MessageMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
