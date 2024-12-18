@@ -52,6 +52,18 @@
     <input id="sex" @ref="SexInput" />
     <br />
 
+    <label for="size">Size (lbs):</label>
+    <input id="size" @ref="SizeInput" />
+    <br />
+
+    <label for="adoption">Adoption Status</label>
+    <input id="adoption" @ref="AdoptionInput" />
+    <br />
+
+    <label for="health">Health Info</label>
+    <input id="health" @ref="HealthInput" />
+    <br />
+
     <label for="photo">Upload Photo:</label>
     <InputFile OnChange="HandleFileSelected" />
     <br />
@@ -69,6 +81,9 @@
 <p>Shelter ID: @ShelterID</p>
 <p>Date Added: @DateAdded</p>
 <p>Sex: @Sex</p>
+<p>Size (lbs): @Size</p>
+<p>Adoption Status: @AdoptionStatus</p>
+<p>Health Info: @HealthInfo</p>
 
 <p>Uploaded Photo: @UploadedPhotoPath</p>
 @if (!string.IsNullOrEmpty(UploadedPhotoPath))
@@ -85,7 +100,9 @@
     private ElementReference ShelterIdInput;
     private ElementReference DateAddedInput;
     private ElementReference SexInput;
-
+    private ElementReference SizeInput;
+    private ElementReference AdoptionInput;
+    private ElementReference HealthInput;
 
     private string DogName { get; set; } = "";
     private string DogBreed { get; set; } = "";
@@ -95,6 +112,9 @@
     private int ShelterID { get; set; }
     private DateTime DateAdded { get; set; }
     private string Sex { get; set; } = "";
+    private int Size { get; set; }
+    private string AdoptionStatus { get; set; } = "";
+    private string HealthInfo { get; set; } = "";
 
     private string UploadedPhotoPath { get; set; } = "";
 
@@ -121,6 +141,12 @@
 
         Sex = await JSRuntime.InvokeAsync<string>("getInputValue", SexInput);
 
+        var numberString3 = await JSRuntime.InvokeAsync<string>("getInputValue", SizeInput);
+        Size = int.TryParse(numberString3, out var number3) ? number3 : 0;
+
+        AdoptionStatus = await JSRuntime.InvokeAsync<string>("getInputValue", AdoptionInput);
+        HealthInfo = await JSRuntime.InvokeAsync<string>("getInputValue", HealthInput);
+
         Dog dog = new Dog();
         dog.Name = DogName;
         dog.Breed = DogBreed;
@@ -130,6 +156,11 @@
         dog.ShelterID = ShelterID;
         dog.DateAdded = DateAdded;
         dog.Sex = Sex;
+
+        dog.SizeLbs = Size;
+        dog.AdoptionStatus = AdoptionStatus;
+        dog.HealthInfo = HealthInfo;
+
         dog.ImagePath = UploadedPhotoPath;
 
         using var context = DbFactory.CreateDbContext();

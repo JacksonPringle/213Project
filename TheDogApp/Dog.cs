@@ -18,13 +18,19 @@ namespace TheDogApp
         public DateTime DateAdded { get; set; }
         public string? Sex { get; set; }
 
+        public int SizeLbs { get; set; }
+
+        public string? AdoptionStatus {  get; set; }
+
+        public string? HealthInfo { get; set; }
+
         public string? ImagePath { get; set; }
 
         public Dog() { }
 
 
         public Dog(int id, string name, string breed, DateTime birth, string descr, decimal cost,
-        int shelter, DateTime added, string sex, int imageID, string? imagePath)
+        int shelter, DateTime added, string sex, int imageID, string? imagePath, int sizeLbs, string? adoptionStatus, string? healthInfo)
         {
             ID = id;
             Name = name;
@@ -37,9 +43,12 @@ namespace TheDogApp
             Sex = sex;
             ImageID = imageID;
             ImagePath = imagePath;
+            SizeLbs = sizeLbs;
+            AdoptionStatus = adoptionStatus;
+            HealthInfo = healthInfo;
         }
 
-        public int getAgeInDays()
+        public int GetAgeInDays()
         {
             return (DateTime.Now - Birthdate).Days;
         }

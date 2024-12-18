@@ -92,8 +92,8 @@
     .Where(d =>
         (string.IsNullOrEmpty(DogName) || d.Name.Contains(DogName, StringComparison.OrdinalIgnoreCase)) &&
         (string.IsNullOrEmpty(DogBreed) || d.Breed.Contains(DogBreed, StringComparison.OrdinalIgnoreCase)) &&
-        (MinAge == 0 || d.getAgeInDays() >= MinAge) &&
-        (MaxAge == 0 || d.getAgeInDays() <= MaxAge))
+        (MinAge == 0 || d.GetAgeInDays() >= MinAge) &&
+        (MaxAge == 0 || d.GetAgeInDays() <= MaxAge))
     .ToList();
 
     }
