@@ -126,12 +126,12 @@
         dog.ShelterID = ShelterID;
         dog.DateAdded = DateAdded;
         dog.Sex = Sex;
-
+        dog.ImagePath = UploadedPhotoPath;
 
         using var context = DbFactory.CreateDbContext();
         context.Dog.Add(dog);
         await context.SaveChangesAsync();
-
+        
     }
 
     private async Task HandleFileSelected(InputFileChangeEventArgs e)
@@ -155,6 +155,8 @@
 
         // Set the path to display the image
         UploadedPhotoPath = $"/images/{fileName}";
+
+
     }
 }
 

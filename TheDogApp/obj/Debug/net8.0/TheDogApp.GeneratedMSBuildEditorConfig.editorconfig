@@ -17,95 +17,95 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TheDogApp
 build_property.RootNamespace = TheDogApp
-build_property.ProjectDir = C:\Users\ToddP\Downloads\r2\New folder (9)\TheDogApp\
+build_property.ProjectDir = C:\Users\ToddP\Downloads\r2\New folder (10)\TheDogApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ToddP\Downloads\r2\New folder (9)\TheDogApp
+build_property.MSBuildProjectDirectory = C:\Users\ToddP\Downloads\r2\New folder (10)\TheDogApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/App.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/ApplicationForm.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/ApplicationForm.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcHBsaWNhdGlvbkZvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/CreateAccount.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/CreateAccount.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDcmVhdGVBY2NvdW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/CreateShelter.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/CreateShelter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDcmVhdGVTaGVsdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Dogs.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Dogs.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2dzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Error.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Events.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Events.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFdmVudHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Home.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Login.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Messages.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Messages.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNZXNzYWdlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Profile.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/SentApplications.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/SentApplications.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZW50QXBwbGljYXRpb25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/ShelterDetails.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/ShelterDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGVsdGVyRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/Shelters.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/Shelters.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaGVsdGVycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/UploadDog.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/UploadDog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGxvYWREb2cucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/ViewDog.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/ViewDog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3RG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Pages/ViewShelter.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Pages/ViewShelter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3U2hlbHRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Routes.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/_Imports.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Layout/MainLayout.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-pf9h57oobd
 
-[C:/Users/ToddP/Downloads/r2/New folder (9)/TheDogApp/Components/Layout/NavMenu.razor]
+[C:/Users/ToddP/Downloads/r2/New folder (10)/TheDogApp/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-s2y68piz17

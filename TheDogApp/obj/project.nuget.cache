@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XDmCADLVeKg=",
+  "dgSpecHash": "QteNFzGfbD8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (9)\\TheDogApp\\TheDogApp.csproj",
+  "projectFilePath": "C:\\Users\\ToddP\\Downloads\\r2\\New folder (10)\\TheDogApp\\TheDogApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ToddP\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ToddP\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
