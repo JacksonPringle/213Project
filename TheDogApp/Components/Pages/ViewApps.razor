@@ -1,0 +1,97 @@
+﻿@page "/viewApps"
+@rendermode InteractiveServer
+@inject DogService DogService
+@inject AdoptAppService AdoptAppService
+@inject NavigationManager Navigation
+
+
+
+@inject IJSRuntime JSRuntime
+
+
+
+
+
+<PageTitle>Adoption Applications</PageTitle>
+
+<h1>
+    View Adoption Application
+</h1>
+
+
+
+<div style="background-color: #EEEBE8;margin: 15px;line-height: 1.8">
+    <ul>
+        @foreach (var app in apps)
+        {
+            <li>
+                @app.Name 
+                <button @onclick="() => ViewAppDetails(app.ID)">View Details</button>
+            </li>
+        }
+    </ul>
+</div>
+
+<div style="background-color: #EAE7E4; margin: 15px; line-height: 1.8">
+    <p>Your Applied Filters:</p>
+    <p>Dog Name Contains: @DogName</p>
+    <p>Dog Breed Contains: @DogBreed</p>
+    <p>Mininmum Age: @MinAge</p>
+    <p>Maximum Age: @MaxAge</p>
+</div>
+
+@code {
+
+    private ElementReference NameInput;
+    private ElementReference BreedInput;
+    private ElementReference MinAgeInput;
+    private ElementReference MaxAgeInput;
+
+    private string DogName { get; set; } = "";
+    private string DogBreed { get; set; } = "";
+    private int MinAge { get; set; }
+    private int MaxAge { get; set; }
+
+    private List<AdoptApp> apps = new List<AdoptApp>();
+
+    private List<Dog> dogs = new List<Dog>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        dogs = DogService.GetDogList();
+    }
+
+    private void ViewAppDetails(int dogId)
+    {
+        Navigation.NavigateTo($"/viewApp/{dogId}");
+    }
+
+    private async Task ReadInputValue()
+    {
+        DogName = await JSRuntime.InvokeAsync<string>("getInputValue", NameInput);
+        DogBreed = await JSRuntime.InvokeAsync<string>("getInputValue", BreedInput);
+        var numberString = await JSRuntime.InvokeAsync<string>("getInputValue", MinAgeInput);
+        MinAge = int.TryParse(numberString, out var number) ? number : 0;
+
+        var numberString2 = await JSRuntime.InvokeAsync<string>("getInputValue", MaxAgeInput);
+        MaxAge = int.TryParse(numberString2, out var number2) ? number2 : 0;
+
+        dogs = DogService.GetDogList();
+
+        dogs = dogs
+    .Where(d =>
+        (string.IsNullOrEmpty(DogName) || d.Name.Contains(DogName, StringComparison.OrdinalIgnoreCase)) &&
+        (string.IsNullOrEmpty(DogBreed) || d.Breed.Contains(DogBreed, StringComparison.OrdinalIgnoreCase)) &&
+        (MinAge == 0 || d.GetAgeInDays() >= MinAge) &&
+        (MaxAge == 0 || d.GetAgeInDays() <= MaxAge))
+    .ToList();
+
+    }
+
+}
+
+<script>
+    window.getInputValue = (element) => {
+        return element.value;
+    };
+</script>

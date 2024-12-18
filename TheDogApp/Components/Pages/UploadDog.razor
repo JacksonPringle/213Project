@@ -139,12 +139,11 @@
         string value = "";
         value = await JSRuntime.InvokeAsync<string>("localStorageHelper.getItem", "loggedID");
 
-        //tempUsername = "hi";
         if (int.TryParse(value, out int id))
         {
             var users = SiteUserService.GetSiteUserList();
             var user = users.FirstOrDefault(u => u.Id == id);
-            //tempUsername = id.ToString();
+            tempUsername = user.Username;
 
             if (user != null)
             {
@@ -226,6 +225,8 @@
         }
 
     }
+
+    
 
     private async Task HandleFileSelected(InputFileChangeEventArgs e)
     {
